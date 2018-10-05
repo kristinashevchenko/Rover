@@ -69,10 +69,10 @@ public class Rover {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of block:");
         int num = scan.nextInt();
-        Thread thread = new Thread(null, null, "MarsRover", 100000000) {
+        Thread thread = new Thread(null, null, "Rover", 100000000) {
             @Override
             public void run() {
-                int result = 0;
+                int result ;
                 try {
                     if (num != 0) {
                         Rover r = new Rover(num);
